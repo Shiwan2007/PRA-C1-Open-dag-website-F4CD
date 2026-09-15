@@ -36,15 +36,27 @@ $schooljaar = "2026-2027";
     <nav class="main-nav" id="mainNav">
         <div class="container nav-inner">
             <a href="#top" class="nav-logo">Software Developer</a>
-            <button class="nav-toggle" aria-label="Menu openen" id="navToggle">
+
+            <?php
+            // De navigatie staat nu in PHP, zodat main.js niet meer nodig is.
+            $menuItems = [
+                "opleiding" => "Opleiding",
+                "vakken" => "Vakken",
+                "rooster" => "Rooster",
+                "toekomst" => "Na de opleiding",
+                "sfeer" => "Sfeer"
+            ];
+            ?>
+
+            <input type="checkbox" id="navToggle" class="nav-checkbox">
+            <label for="navToggle" class="nav-toggle" aria-label="Menu openen">
                 <span></span><span></span><span></span>
-            </button>
+            </label>
+
             <ul class="nav-links" id="navLinks">
-                <li><a href="#opleiding">Opleiding</a></li>
-                <li><a href="#vakken">Vakken</a></li>
-                <li><a href="#rooster">Rooster & Blokken</a></li>
-                <li><a href="#toekomst">Na de opleiding</a></li>
-                <li><a href="#sfeer">Sfeer</a></li>
+                <?php foreach ($menuItems as $id => $label): ?>
+                    <li><a href="#<?php echo htmlspecialchars($id); ?>"><?php echo htmlspecialchars($label); ?></a></li>
+                <?php endforeach; ?>
             </ul>
         </div>
     </nav>
@@ -118,30 +130,15 @@ $schooljaar = "2026-2027";
             </div>
         </section>
 
-        <!-- Rooster & Blokken -->
+        <!-- Rooster -->
         <section id="rooster" class="section">
             <div class="container">
-                <h2>Rooster, blokken & versnellen</h2>
-                <div class="grid-2">
-                    <div>
-                        <h3>Hoe ziet een week eruit?</h3>
-                        <p>Een typische week bestaat uit een mix van klassikale lessen, praktijklessen en zelfstandig werken. Je hebt meestal 3 tot 4 dagen school per week, afhankelijk van het blok.</p>
-                        <p>Er is voldoende ruimte voor huiswerk en projecten. De docenten begeleiden je actief, maar je leert ook zelfstandig plannen.</p>
-                    </div>
-                    <div>
-                        <h3>Indeling van de blokken</h3>
-                        <p>Het schooljaar is opgedeeld in blokken. Elk blok heeft een eigen focus en eindigt met een beoordeling of oplevering.</p>
-                        <ul class="simple-list">
-                            <li><strong>Blok A & B</strong> – Basis webdevelopment & programmeren</li>
-                            <li><strong>Blok C</strong> – Dieper in projecten en PHP</li>
-                            <li><strong>Blok D</strong> – Afronding en voorbereiding op stage/werk</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card info-card">
-                    <h3>Versnellen is mogelijk</h3>
-                    <p>Heb je al ervaring of leer je snel? In overleg met je docent kun je bepaalde onderdelen versnellen. Zo kun je eerder stage lopen of sneller doorstromen naar het hbo.</p>
-                </div>
+                <h2>Rooster</h2>
+                <img
+                    src="img/Rooster eerste leerjaar.png"
+                    alt="Rooster eerste leerjaar"
+                    class="rooster-image"
+                >
             </div>
         </section>
 
