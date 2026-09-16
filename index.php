@@ -134,6 +134,7 @@ $schooljaar = "2026-2027";
         <section id="rooster" class="section">
             <div class="container">
                 <h2>Rooster</h2>
+                <p>Hier ziet u het rooster van het eerste leerjaar:</p>
                 <img
                     src="img/Rooster eerste leerjaar.png"
                     alt="Rooster eerste leerjaar"
