@@ -1,5 +1,5 @@
 <?php
-// Dynamische data (voorbeeld – pas aan naar jouw gegevens)
+// credits
 $studentNaam = "Shiwan Garib";
 $leerjaar = "2e jaars";
 $opleiding = "Software Developer";
@@ -19,7 +19,7 @@ $schooljaar = "2026-2027";
 </head>
 <body>
 
-    <!-- Vaste Curio-template bovenaan (zoals in het moduleboekje) -->
+    <!-- Vaste Curio-template bovenaan -->
     <header class="curio-header">
         <div class="curio-header__inner">
             <div class="curio-header__logo">
@@ -38,7 +38,6 @@ $schooljaar = "2026-2027";
             <a href="#top" class="nav-logo">Software Developer</a>
 
             <?php
-            // De navigatie staat nu in PHP, zodat main.js niet meer nodig is.
             $menuItems = [
                 "opleiding" => "Opleiding",
                 "vakken" => "Vakken",
@@ -72,26 +71,70 @@ $schooljaar = "2026-2027";
             </div>
         </section>
 
-        <!-- Over de opleiding -->
+        <!-- Opleiding -->
         <section id="opleiding" class="section">
             <div class="container">
-                <h2>Over de opleiding</h2>
+                <h2>Opleiding</h2>
                 <div class="grid-2">
                     <div>
                         <p>Bij de opleiding <strong>Software Developer</strong> van Curio leer je hoe je moderne webapplicaties, apps en systemen bouwt. Je werkt met actuele technologieën zoals HTML, CSS, JavaScript, PHP, databases en versiebeheer met Git.</p>
-                        <p>De opleiding is sterk praktijkgericht: je werkt aan echte projecten, leert samenwerken in teams en krijgt de kans om te versnellen als je dat wilt.</p>
-                        <p>Aspirant-studenten waarderen vooral de sfeer op de afdeling en de betrokkenheid van docenten en medestudenten.</p>
+                        <p>De opleiding is sterk praktijkgericht: je werkt aan echte projecten, leert samenwerken in teams en krijgt de ruimte om in je eigen tempo te groeien.</p>
                     </div>
                     <div class="card highlight-card">
                         <h3>In het kort</h3>
                         <ul class="checklist">
                             <li>Niveau 4 MBO</li>
                             <li>Duur: 3 of 4 jaar (versnellen mogelijk)</li>
-                            <li>Praktijkgericht & projectmatig</li>
-                            <li>Focus op webdevelopment & software</li>
+                            <li>Praktijkgericht &amp; projectmatig</li>
+                            <li>Focus op webdevelopment &amp; software</li>
                             <li>Goede doorstroom naar hbo of werk</li>
                         </ul>
                     </div>
+                </div>
+
+                <h3 style="margin-top: 2.5rem; margin-bottom: 1rem;">Drie levels</h3>
+                <div class="cards-grid three" style="margin-bottom: 2.5rem;">
+                    <article class="card">
+                        <h3>Level 1 – Fundamentals</h3>
+                        <p>Basis front-end (HTML &amp; CSS). 24 weken, 6 units van 4 weken. Leeruitkomsten worden aangeleverd. Eindigt met bindend studieadvies (BSA).</p>
+                    </article>
+                    <article class="card">
+                        <h3>Level 2 – Professionaliseren</h3>
+                        <p>Je kiest zelf modules en bepaalt hoe je leeruitkomsten bewijst. Complexere challenges en eigen tempo.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Level 3 – Beroepsgericht</h3>
+                        <p>Stage (BPV), echte challenges uit het werkveld, communicatie met externen en examinering.</p>
+                    </article>
+                </div>
+
+                <h3 style="margin-bottom: 1rem;">Een unit van 4 weken</h3>
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3>Module</h3>
+                        <p>Theorie + praktijk over één onderwerp. Afgesloten met een SD-certificaat.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Challenge</h3>
+                        <p>3 weken projectmatig werken in sprints. Individueel of in een groep toon je leeruitkomsten aan.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Masterclasses</h3>
+                        <p>Korte lessen (ca. 45–60 min) over specifieke onderwerpen, naast de challenge.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Reflectieweek</h3>
+                        <p>1 week: portfolio bijwerken, presenteren, reflecteren (POP) en nieuwe leerdoelen stellen.</p>
+                    </article>
+                </div>
+
+                <div class="card info-card" style="margin-top: 2rem;">
+                    <h3>Trajecten</h3>
+                    <ul class="simple-list">
+                        <li><strong>Regulier</strong> – 4 leerjaren (level 1 in jaar 1, level 2 in jaar 2–3, level 3 in jaar 4)</li>
+                        <li><strong>Versneld</strong> – mogelijk in 3 jaar als je in level 1 al vroeg zelfstandig bewijslast kunt aanleveren</li>
+                        <li><strong>Verlengd</strong> – meer tijd per level wanneer dat nodig is</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -222,8 +265,6 @@ $schooljaar = "2026-2027";
             <p>Deze pagina is gemaakt in het kader van Praktijkopdracht C1 – Open dag-website · Opleiding Software Developer · Curio</p>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 </html>
     

@@ -1,13 +1,12 @@
 /* ========================================
    Curio Software Developer – Open Dag Site
-   Responsive, modern, professioneel
    ======================================== */
 
 :root {
     /* Curio-geïnspireerde kleuren */
     --curio-blue: #003366;
     --curio-blue-light: #0055a5;
-    --curio-accent: #f5c518; /* rood uit logo */
+    --curio-accent: #f5c518; 
     --curio-teal: #00a8a8;
     --curio-yellow: #f5c518;
     --curio-dark: #1a1a2e;
@@ -306,7 +305,7 @@ a:hover {
 
 .info-card {
     margin-top: 2rem;
-    border-left: 5px solid var(--curio-teal);
+    border-left: 5px solid var(--curio-yellow);
 }
 
 .quote-card {
