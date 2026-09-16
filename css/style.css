@@ -7,7 +7,7 @@
     /* Curio-geïnspireerde kleuren */
     --curio-blue: #003366;
     --curio-blue-light: #0055a5;
-    --curio-accent: #e30613; /* rood uit logo */
+    --curio-accent: #f5c518; /* rood uit logo */
     --curio-teal: #00a8a8;
     --curio-yellow: #f5c518;
     --curio-dark: #1a1a2e;
@@ -220,7 +220,7 @@ a:hover {
 }
 
 .btn-primary:hover {
-    background: #c00510;
+    background: #f5c518;
     color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(227, 6, 19, 0.35);
